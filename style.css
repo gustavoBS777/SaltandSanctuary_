@@ -1,0 +1,118 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #1c1c1c, #2b2b2b);
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #f8f8f8;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Main sections */
+main {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 50px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+section h2 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+/* Formulário de contato */
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contato input,
+.contato textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #2e2e2e;
+  color: #f0f0f0;
+}
+
+.contato button {
+  padding: 10px;
+  font-size: 1rem;
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contato button:hover {
+  background: #e6b800;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #777;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 6px 0;
+  }
+}

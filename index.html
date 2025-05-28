@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salt and Sanctuary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Salt and Sanctuary</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="personagem.html">Personagem</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introdução com mais informações -->
+    <section class="intro">
+      <h2>Bem-vindo ao universo sombrio de Salt and Sanctuary</h2>
+      <p>
+        Salt and Sanctuary é um RPG de ação 2D com forte inspiração em jogos como Dark Souls.
+        Desenvolvido pela Ska Studios, ele oferece combate desafiador, exploração em estilo metroidvania
+        e uma atmosfera gótica intensa. Lute contra chefes colossais, desbloqueie habilidades únicas
+        e descubra os segredos de uma ilha amaldiçoada enquanto evolui seu personagem em um complexo sistema de classes.
+      </p>
+      <p>
+        Com suporte a multiplayer local, dezenas de armas, magias e uma trilha sonora melancólica, Salt and Sanctuary
+        é uma jornada sombria para jogadores que buscam dificuldade e imersão.
+      </p>
+    </section>
+
+    <!-- Trailer funcional -->
+    <section class="trailer">
+      <h2>Trailer Oficial</h2>
+      <div class="video-container">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/xKzbtP1GRuY"
+          title="Salt and Sanctuary Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Formulário de contato -->
+    <section class="contato">
+      <h2>Fale conosco</h2>
+      <form onsubmit="enviarFormulario(event)">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Salt and Sanctuary Fan Page. Todos os direitos reservados.</p>
+  </footer>
+  <script>
+    function enviarFormulario(event) {
+      event.preventDefault();
+      alert("Mensagem enviada com sucesso! (simulado)");
+    }
+  </script>
+</body>
+</html>
